@@ -25,22 +25,22 @@ from admin.models import User
 def index():
     tmp = """
 <p><a href="/admin/?lang=en">Click me to get to Admin! (English)</a></p>
-<p><a href="/admin/?lang=cs">Click me to get to Admin! (Czech)</a></p>
-<p><a href="/admin/?lang=de">Click me to get to Admin! (German)</a></p>
-<p><a href="/admin/?lang=es">Click me to get to Admin! (Spanish)</a></p>
-<p><a href="/admin/?lang=fa">Click me to get to Admin! (Farsi)</a></p>
-<p><a href="/admin/?lang=fr">Click me to get to Admin! (French)</a></p>
-<p><a href="/admin/?lang=pt">Click me to get to Admin! (Portuguese)</a></p>
-<p><a href="/admin/?lang=ru">Click me to get to Admin! (Russian)</a></p>
-<p><a href="/admin/?lang=pa">Click me to get to Admin! (Punjabi)</a></p>
-<p><a href="/admin/?lang=zh_CN">Click me to get to Admin! (Chinese - Simplified)</a></p>
-<p>
-  <a href="/admin/?lang=zh_TW">Click me to get to Admin! (Chinese - Traditional)</a>
-</p>
+
 """
     return tmp
 
-
+# <p><a href="/admin/?lang=cs">Click me to get to Admin! (Czech)</a></p>
+# <p><a href="/admin/?lang=de">Click me to get to Admin! (German)</a></p>
+# <p><a href="/admin/?lang=es">Click me to get to Admin! (Spanish)</a></p>
+# <p><a href="/admin/?lang=fa">Click me to get to Admin! (Farsi)</a></p>
+# <p><a href="/admin/?lang=fr">Click me to get to Admin! (French)</a></p>
+# <p><a href="/admin/?lang=pt">Click me to get to Admin! (Portuguese)</a></p>
+# <p><a href="/admin/?lang=ru">Click me to get to Admin! (Russian)</a></p>
+# <p><a href="/admin/?lang=pa">Click me to get to Admin! (Punjabi)</a></p>
+# <p><a href="/admin/?lang=zh_CN">Click me to get to Admin! (Chinese - Simplified)</a></p>
+# <p>
+#   <a href="/admin/?lang=zh_TW">Click me to get to Admin! (Chinese - Traditional)</a>
+# </p>
 @app.route("/favicon.ico")
 def favicon():
     return redirect(url_for("static", filename="/favicon.ico"))

@@ -1,14 +1,14 @@
-{% extends 'admin/model/list.html' %}
+{% extends 'admin/model/list.html' %} {% block body %}
+<p>
+  Góc nhìn này thể hiện cấu trúc cây, trong đó có mối quan hệ đệ quy giữa các bản ghi
+  trên cùng một bảng.
+</p>
 
-{% block body %}
-    <p>
-      This view demonstrated a tree structure, where there's a recursive relationship
-      between records on the same table.
-    <p>
-    <p>
-      It also demonstrates how to extend the builtin <em>list.html</em> template, and
-      pass your own parameters to the template. E.g. the parameter: <em>foo</em>, which
-      has the value <b>{{ foo }}</b>, passed in dynamically from the <em>{{ h.get_current_view().name }}</em> view.
-    </p>
-    {{ super() }}
-{% endblock %}
+<p></p>
+<p>
+  Nó cũng chứng minh cách mở rộng phần tích hợp <em>list.html</em> template, and pass
+  your own parameters to the template. E.g. the parameter: <em>foo</em>, which has the
+  value <b>{{ foo }}</b>, passed in dynamically from the
+  <em>{{ h.get_current_view().name }}</em> view.
+</p>
+{{ super() }} {% endblock %}
